@@ -1,0 +1,10 @@
+<mat-grid-list [cols]="columns" gutterSize="10px" rowHeight="2:3">
+  <mat-grid-tile *ngFor="let item of gallery">
+    <img
+    ngSrc="{{item.src}}"
+    [alt]="item.alt"
+    fill
+    loading="lazy"
+    (click)="openDialog(item.position)">
+  </mat-grid-tile>
+</mat-grid-list>

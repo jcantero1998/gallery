@@ -1,0 +1,16 @@
+<div class="container">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <h1 style="padding: 20px; margin-top: 20px;">📷 Gallery 📷</h1>
+  </div>
+
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" class="gallery-text">
+    <mat-tab label="Tab-1"><app-gallery></app-gallery></mat-tab>
+    <mat-tab label="Tab-2"><app-gallery></app-gallery></mat-tab>
+    <mat-tab label="Tab-3"><app-gallery></app-gallery></mat-tab>
+  </mat-tab-group>
+
+</div>
+
+<button mat-fab *ngIf="showScrollButton" (click)="scrollToTop()" class="scroll-icon">
+  <mat-icon>keyboard_arrow_up</mat-icon>
+</button>
